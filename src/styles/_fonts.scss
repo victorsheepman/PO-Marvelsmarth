@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Cedora' ;
+    src:    url('../assets/fonts/cedora/Cedora-RegularStd.otf')format('opentype'),
+            url('../assets/fonts/cedora/Cedora-RegularItalicStd.otf')format('opentype'),
+            url('../assets/fonts/cedora/Cedora-BoldStd.otf')format('opentype'),
+            url('../assets/fonts/cedora/Cedora-BoldItalicStd.otf')format('opentype');
+    font-weight: 400;
+	font-style: normal;
+}
+$font:'Cedora';
+
+
+h3{
+    font-family: $font;
+    font-size: 22px;
+    line-height: 43px;
+    color: #000000;
+    font-weight: bold;
+
+}
+h1{
+    @extend h3;
+    color: white;
+}
+
+.bold{
+    font-size: 18px;
+    line-height: 43px;
+    color: #000000;
+    font-weight: bold;
+    font-family: $font;
+}

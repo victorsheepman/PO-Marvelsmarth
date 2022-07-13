@@ -1,0 +1,12 @@
+.layout{
+    display: grid;
+    grid-template-columns: porcentaje(142) porcentaje(1774);
+    grid-template-rows: 94px 618px 88px;
+    grid-template-areas:    'header header'
+                            'sidebar main'
+                            'sidebar main';
+    &__main{
+        grid-area: main;
+        background-color: red;
+    }
+}
