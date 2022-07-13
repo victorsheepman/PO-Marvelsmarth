@@ -10,7 +10,7 @@
 $font:'Cedora';
 
 
-h3{
+.title-3{
     font-family: $font;
     font-size: 22px;
     line-height: 43px;
@@ -18,9 +18,17 @@ h3{
     font-weight: bold;
 
 }
+.caption{
+    font-family: $font;
+    font-size: 20px;
+    line-height: 23px;
+    color: #6f7173;
+    font-weight: bold;
+    text-align: center;
+}
 h1{
     @extend h3;
-    color: white;
+    color: #000000;
 }
 
 .bold{

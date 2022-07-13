@@ -9,6 +9,13 @@
 //CONTAINERS
 @import '../container/Layout/Layout';
 @import '../container/Sidebar/Sidebar';
-
+@import '../container/LoginContainer/LoginContainer';
 //Components
 @import '../components/Header/Header';
+
+
+//Pages
+@import '../pages/Home/Home';
+@import '../pages/Login/Login';
+
+@import "~bootstrap/scss/bootstrap"

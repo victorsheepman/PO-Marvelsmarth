@@ -1,4 +1,12 @@
 @function porcentaje($width){
     @return calc($width * 100% / 1916);
 };
- 
+@mixin  button($width, $back-color) {
+    width: $width;
+    height: 50px;
+    background-color:$back-color ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
