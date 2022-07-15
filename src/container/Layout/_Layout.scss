@@ -7,6 +7,6 @@
                             'sidebar main';
     &__main{
         grid-area: main;
-        background-color: red;
+        background-color: $color-blue;
     }
 }

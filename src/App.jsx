@@ -3,6 +3,7 @@ import { Layout } from './container/Layout/Layout';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Login } from './pages/Login/Login';
 import { Home } from './pages/Home/Home';
+import Calendar from './pages/Calendar/Calendar';
 //Vas a hacer una "const" que será una cajita. Le pondrás el nombre de App
 
 const App = () => {
@@ -11,27 +12,18 @@ const App = () => {
       const [login, setLogin] = useState(false);
       console.log(login);
    return (
-      <>
-		<BrowserRouter>
-         <Routes>
-            {
-               login ?
-               <>
-                  <Layout>
-                     <Route path='/home' element={<Home />} />
-                  </Layout>
-               
-               </>
-               : <Route path='/login' element={<Login setLogin={setLogin} login={login} />} />
-            }
-             <Route
-              path="*"
-              element={<Navigate to="/login" />}
-            /> 
 
-         </Routes>
+		<BrowserRouter>
+         <Layout>
+            <Routes>
+           
+               <Route path="/home" element={<Home />} />
+               <Route path="/calendar" element={<Calendar />} />
+           
+            </Routes>
+         </Layout>
       </BrowserRouter>
-      </>
+      
    );
 };
 

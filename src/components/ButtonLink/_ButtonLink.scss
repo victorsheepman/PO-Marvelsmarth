@@ -1,0 +1,14 @@
+.buttonLink{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    transition: all .3s ease-in;
+    cursor: pointer;
+   
+    
+}   
+.buttonLink:hover{
+    background-color: #080c15;
+}  

@@ -7,7 +7,7 @@ export const Layout = ({children}) => {
     <div className='layout'>
         <Header />
         <Sidebar />
-        <main className='layout__main'>
+        <main className='layout__main overflow-auto'>
           {children}
         </main>
     </div>
