@@ -2,8 +2,8 @@
 @import './mixins';
 
 //VARIABLES
-@import './fonts';
 @import './colors';
+@import './fonts';
 @import './base';
 
 //CONTAINERS
@@ -11,6 +11,9 @@
 @import '../container/Sidebar/Sidebar';
 @import '../container/LoginContainer/LoginContainer';
 @import '../container/Agenda/Agenda';
+@import '../container/NuevaCita/NuevaCita';
+@import '../container/AddCliente/AddCliente';
+@import '../container/FacturasRecientes/FacturasRecientes';
 
 
 //Components
@@ -19,6 +22,9 @@
 @import '../components/ContainerWhite/ContainerWhite';
 @import '../components/Citas/Citas';
 @import '../components/UserCalendar/UserCalendar';
+@import '../components/Aside/Aside';
+@import '../components/Filter/Filter';
+@import '../components/Factura/Factura';
 
 
 
@@ -27,6 +33,10 @@
 @import '../pages/Home/Home';
 @import '../pages/Login/Login';
 @import '../pages/Calendar/Calendar';
+@import '../pages/Ventas/FacturaAbierta/FacturaAbierta';
 
 
-@import "~bootstrap/scss/bootstrap"
+@import "~bootstrap/scss/bootstrap";
+
+@import 'react-big-calendar/lib/sass/styles';
+//@import 'react-big-calendar/lib/addons/dragAndDrop/styles'; // if using DnD

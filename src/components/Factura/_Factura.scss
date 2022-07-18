@@ -1,0 +1,35 @@
+.factura{
+    &__date{
+        width: 30%;
+        height: 100%;
+        //background-color: aqua;
+    }
+    &__line{
+        width: 3px;
+        background-color: #c9ccd0;
+        height: 30px;
+        margin:0px 50px;
+    }
+    &__items{
+        @extend .factura__date;
+        width: 50%;
+        ul{
+            padding: 0%;
+        }
+        li{
+            list-style: none;
+        }
+    }
+    &__price{
+        width: 20%;
+        height: 100%;
+        text-align: right;
+    }
+    
+}
+.active{
+    border: 4px blue solid;
+}
+.inactive{
+    border-left:4px solid blue;
+}

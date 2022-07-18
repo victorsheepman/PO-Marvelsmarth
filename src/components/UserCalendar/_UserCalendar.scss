@@ -5,6 +5,15 @@
    flex-direction: column;
    align-items: center;
    justify-content: space-between;
+   &--flex{
+    @extend .usercalendar;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    //background-color: #87bfff;
+   }
     &__profile{
         width: 60px;
         height: 67px;
@@ -17,5 +26,12 @@
         h1{
             color: #037aff;
         }
+        &--flex{
+            @extend .usercalendar__profile;
+            width: 60px;
+            height: 60px;
+            margin-right: 7%;
+        }
     }
+
 }

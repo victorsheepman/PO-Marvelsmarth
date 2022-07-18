@@ -1,0 +1,30 @@
+.filter{
+    width: 100%;
+    height: auto;
+    //background-color: red;
+    ul{
+        width: 50%;
+        height: auto;
+        display: flex;
+        //background-color: aqua;
+        padding: 0% ;
+        justify-content: space-between;
+    }
+    &__li{
+        text-align: left;   
+        text-decoration: none;
+        list-style: none;
+        font-size: 23px;
+        line-height: 33px;
+        color: $color-yellow;
+        font-weight: bold;
+        font-family: $font;
+        cursor: pointer;
+        transition: all .5s linear;
+        &--underline{
+            @extend .filter__li;
+            text-decoration: underline;
+            transition: all .5s linear;
+        }
+    }
+}
