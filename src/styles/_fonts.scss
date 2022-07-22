@@ -25,6 +25,13 @@ $font:'Cedora';
     font-weight: bold;
     font-family: $font; 
 }
+.title-4{
+    font-size: 27px;
+    line-height: 27px;
+    color: #f6c94c;
+    font-weight: bold;
+    font-family: $font;
+}
 .caption{
     font-family: $font;
     font-size: 20px;
@@ -44,6 +51,13 @@ $font:'Cedora';
     line-height: 23px;
     color: black;
 }
+.label-lg{
+    height: 55px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #000000;
+    font-family: "Cedora";
+}
 h1{
     @extend h3;
     color: #000000;
@@ -54,5 +68,18 @@ h1{
     line-height: 43px;
     color: #000000;
     font-weight: bold;
+    font-family: $font;
+}
+.body-sm{
+    font-size: 20px;
+    line-height: 27px;
+    color: $color-yellow;
+    font-family: "Cedora";
+}
+.body-md{
+    font-size: 24px;
+    line-height: 33px;
+    color: #f6c94c;
+    font-weight: 500;
     font-family: $font;
 }

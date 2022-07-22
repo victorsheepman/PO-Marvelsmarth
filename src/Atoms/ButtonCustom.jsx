@@ -9,7 +9,8 @@ export const ButtonCustom = ({title, styles, handle, classe}) => {
             height:styles.height ? styles.height : '45px' ,
             backgroundColor: styles.background ,
             color: styles.color,
-            marginTop: styles.margin
+            marginTop: styles.margin,
+            marginLeft:styles.marginLeft
             
         }} onClick={handle}>
             {title}

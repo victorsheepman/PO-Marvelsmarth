@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { ButtonAcordion } from '../../Atoms/ButtonAcordion'
+
 import { MyCalendar } from '../../components/BigCalendar/MyCalendar'
 import { UserCalendar } from '../../components/UserCalendar/UserCalendar'
-import { Agenda } from '../../container/Agenda/Agenda'
+
 import {user} from './helpers'
 import Button from 'react-bootstrap/Button';
 import {ModalShadow} from '../../Atoms/ModalShadow'
@@ -10,7 +10,7 @@ import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import { FormCustom } from '../../Atoms/FormCustom'
 import { FormSelection } from '../../Atoms/FormSelection'
-import InputGroup from 'react-bootstrap/InputGroup';
+
 import { ButtonCustom } from '../../Atoms/ButtonCustom'
 const CalendarPage = () => {
   const [show, setShow] = useState(false)
@@ -64,10 +64,17 @@ const CalendarPage = () => {
           }
         </section>
         {/*<Agenda />*/}
-        <Button variant="primary"
-          onClick={()=>setShow(true)}
-        >Primary</Button>
-        <MyCalendar />
+       
+        <MyCalendar /> 
+        <div className='container-lg mt-3 d-flex justify-content-end'>
+          <Button 
+            variant="primary" 
+            onClick={()=>setShow(true)}
+          >
+            Nuevo tiempo block
+          </Button>
+        </div>
+       
         <ModalShadow 
           setShow={setShow}
           show={show}

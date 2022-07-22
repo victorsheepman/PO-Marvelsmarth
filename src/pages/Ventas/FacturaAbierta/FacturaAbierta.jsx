@@ -5,6 +5,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import { FacturasRecientes } from '../../../container/FacturasRecientes/FacturasRecientes';
 import Card from 'react-bootstrap/Card';
 import {UserCalendar} from '../../../components/UserCalendar/UserCalendar';
+import { FacturaCliente } from '../../../container/FacturaCliente/FacturaCliente';
 export const FacturaAbierta = () => {
     const [cliente, setCliente] = useState(true)
   return (
@@ -46,22 +47,10 @@ export const FacturaAbierta = () => {
                             Selecciona una cita, servicio  o algún item para revisarlo.  
                         </p>
                     </Card.Body>
-                </Card>:
-                <Card>
-                    <Card.Header>
-                        <UserCalendar
-                            user='Victor'
-                            letra='V'
-                            flex={true} 
-                        />
-                    </Card.Header>
-                    <Card.Body className='d-flex flex-column align-items-center justify-content-center' style={{height:'600px'}}>
-                        <img src="../assets/images/exclamation.png" alt="" srcset="" />
-                        <p className='label-title'>
-                            Selecciona una cita, servicio  o algún item para revisarlo.  
-                        </p>
-                    </Card.Body>
-                </Card>
+                </Card>: <FacturaCliente />
+               
+     
+           
 
             }
         </section>

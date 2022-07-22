@@ -14,6 +14,13 @@
 @import '../container/NuevaCita/NuevaCita';
 @import '../container/AddCliente/AddCliente';
 @import '../container/FacturasRecientes/FacturasRecientes';
+@import '../container/FacturaCliente/FacturaCliente';
+@import '../container/AddPropina/AddPropina';
+@import '../container/Primas/Primas';
+@import '../container/SelectTipoPago/SelectTipoPago';
+@import '../container/DividirPago/DividirPago';
+@import '../container/DatosFactura/DatosFactura';
+@import '../container/Secciones/Seccion';
 
 
 //Components
@@ -25,6 +32,7 @@
 @import '../components/Aside/Aside';
 @import '../components/Filter/Filter';
 @import '../components/Factura/Factura';
+@import '../components/Seccion/Seccion';
 
 
 
@@ -34,7 +42,14 @@
 @import '../pages/Login/Login';
 @import '../pages/Calendar/Calendar';
 @import '../pages/Ventas/FacturaAbierta/FacturaAbierta';
-
+@import '../pages/Ventas/VentasRapido/VentasRapido';
+@import '../pages/Ventas/CitasPage/Citas';
+@import '../pages/Ventas/HistorialVentas/HistorialVentas';
+@import '../pages/Clientes/ListaClientes/ListaClientes';
+@import '../pages/Clientes/Resenas/Resenas';
+@import '../pages/Clientes/Formularios/Formularios';
+@import '../pages/Clientes/HistorialServicios/HistorialServicios';
+@import '../pages/Inventario/InfoGeneral/ResumenInventario';
 
 @import "~bootstrap/scss/bootstrap";
 

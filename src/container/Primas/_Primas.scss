@@ -1,0 +1,36 @@
+.prima{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    &__header{
+        width: 100%;
+        height: 80px;
+        padding-left: 80px;
+        border-bottom: 2px solid $color-yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &__body{
+        width: 50%;
+        height: 100%;
+        &--scroll{
+            @extend .prima__body; 
+        }
+    }
+    
+    
+}
+
+
+.prima__body--scroll::-webkit-scrollbar{
+    height: 8px;
+    background-color: $color-yellow;
+    //border-radius: 50px;
+    opacity: 0.3;
+}
+.prima__body--scroll::-webkit-scrollbar-thumb{
+    background-color: black;
+    height: 10%;
+    //border-radius: 50px;
+}

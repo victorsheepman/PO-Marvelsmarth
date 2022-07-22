@@ -1,0 +1,27 @@
+.facturaCliente{
+    height: 700px;
+    &__header{
+
+    }
+    &__etiqueta{
+        width: 125px;
+        height: 22px;
+        display: block;
+        text-align: center;
+        background-color: #cde4ff;  
+        border-radius: 4px;
+        color: #6b8fff;
+    }
+    &__space{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__bottom{
+        position: absolute;
+        bottom: 1px;
+        padding-right: 7%;
+    }
+}

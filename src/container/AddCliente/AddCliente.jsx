@@ -102,7 +102,47 @@ export const AddCliente = () => {
                             type='text'
                             holder='Sector del cliente'
                         />
-
+                        <FormCustom 
+                            title='Ciudad'
+                            classCustom='col-md-4'
+                            type='text'
+                            holder='Ciudad del cliente'
+                        />
+                    </div> 
+                    <div className='container row mt-3 '>
+                        <FormCustom 
+                            title='Pais'
+                            classCustom='col-md-4'
+                            type='text'
+                            holder='Pais del cliente'
+                        />
+                        <FormCustom 
+                            title='Region'
+                            classCustom='col-md-4'
+                            type='text'
+                            holder='Region del cliente'
+                        />
+                        <FormCustom 
+                            title='Distrito'
+                            classCustom='col-md-4'
+                            type='text'
+                            holder='Distrito del cliente'
+                        />
+                    </div> 
+                    <div className='container row mt-3 ' >
+                        <FormCustom 
+                            title='Tipo de Cliente'
+                            classCustom='col-md-4'
+                            type='text'
+                            holder='Distrito del cliente'
+                        />
+                        <FormSelection 
+                            title='Aplica para credito?'
+                            classCustom='col-md-4'
+                        >
+                            <option value="Hombre">Si</option>
+                            <option value="Mujer">No</option>
+                        </FormSelection>
                         <ButtonCustom 
                             classe='col-md-4 mt-6'
                             styles={{
@@ -114,14 +154,42 @@ export const AddCliente = () => {
                             title='Guardar'
                             
                         />
-                    </div>  
+                    </div>
                 </Card.Body>
             </Card>
             <Card className='mt-3'>
                 <Card.Header>
                 <h3>Informacion importante del cliente</h3>
                 </Card.Header>
+                <Card.Body>
+                    <div className='container row mt-3'>
+                        <Form.Group className="col-md-6 ">  
+                            <Form.Label className='label-title'>Telefono de Emergencia</Form.Label>
+                            <InputGroup>
+                                
+                                <DropdownButton
+                                    variant="outline-secondary"
+                                        title="+1"
+                                        id="input-group-dropdown-1"
+                                    >
+                                        <Dropdown.Item href="#">+58</Dropdown.Item>
+                                        <Dropdown.Item href="#">+23</Dropdown.Item>
+                                    </DropdownButton>
+                                    <Form.Control aria-label="Text input with dropdown button" />
+                                </InputGroup>
+                        </Form.Group>
+                        <FormCustom 
+                            title='Fecha de registro'
+                            classCustom='col-md-6'
+                            type='date'
+                            holder='id del cliente'
+                        /> 
+                    </div>
+                    
+                </Card.Body>
             </Card>
+           
+            
         </section>
         <section className='add__list'>
             <Card>

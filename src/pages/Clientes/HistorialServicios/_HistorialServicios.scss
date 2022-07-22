@@ -1,0 +1,6 @@
+.historialServicios{
+    @extend .listaClientes;
+    &__border{
+        border-radius: 20px;
+    }
+}

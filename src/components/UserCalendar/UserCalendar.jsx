@@ -10,9 +10,12 @@ export const UserCalendar = ({letra='M', user="Manuel", flex=false}) => {
                   {letra}
               </h1>
           </div>
-          <p>
+          <div className='usercalendar__name'>
+            <p>
               {user}
-          </p>
+            </p>
+          </div>
+          
       </div>
     )
   }else{
