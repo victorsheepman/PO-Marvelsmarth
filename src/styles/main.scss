@@ -21,6 +21,11 @@
 @import '../container/DividirPago/DividirPago';
 @import '../container/DatosFactura/DatosFactura';
 @import '../container/Secciones/Seccion';
+@import '../container/Addsection/Addsection';
+@import '../container/Transferencias/Transferencia';
+@import '../container/NuevaTransferencia/NuevaTransferencia';
+@import '../container/Reposicion/Reposicion';
+@import '../container/NuevoProductos/NuevoProductos';
 
 
 //Components
@@ -33,6 +38,9 @@
 @import '../components/Filter/Filter';
 @import '../components/Factura/Factura';
 @import '../components/Seccion/Seccion';
+@import '../components/Inventario/Inventario';
+@import '../components/Producto/Producto';
+
 
 
 

@@ -1,6 +1,7 @@
 import React from 'react'
-
+import Card from 'react-bootstrap/Card';
 import { ButtonSetup } from '../../../Atoms/ButtonSetup';
+import { Inventario } from '../../../components/Inventario/Inventario';
 import { SetUp } from '../../../container/SetUp/SetUp';
 const ResumenInventario = () => {
   return (
@@ -20,7 +21,17 @@ const ResumenInventario = () => {
                 />
 
             </SetUp>
+        <div className='container mt-4 d-flex justify-content-between mx-auto'>
+            <Inventario 
+                boostrap='ml-2'
+            />
+            <Inventario />
+            <Inventario />
+            <Inventario />
+
+        </div>
     </div>
+
     )
 }
 

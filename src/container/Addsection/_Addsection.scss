@@ -1,0 +1,42 @@
+.addSection{
+    width: 100%;
+    height: 100%;
+    &__buttons{
+        width: 250px;
+        height: 40px;
+        background-color: $color-yellow;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;    
+        padding-left: 1%;
+
+    }
+    &__button{
+        width: 120px;
+        height: 33px;
+        background-color: $color-blue;
+        color:$color-yellow;
+        border-radius: 40px;
+        &--yellow{
+            @extend .addSection__button;
+            background-color: $color-yellow;
+            color: $color-blue;
+            border: unset;
+        }
+    }
+    &__pie{
+        width: 40%;
+        height: 60px;
+        background-color: $color-yellow;
+        border-radius: 13px 13px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__footer{
+        height: 80px;
+        background-color: $color-yellow;
+        border-radius: 8px;
+    }
+
+}

@@ -1,0 +1,41 @@
+.producto{
+    width: 425px;
+    height: 193px;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 17px;
+    padding-left: 17px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__image{
+        width: 155px;
+        height: 155px;
+        background-color: $color-blue;
+        border-radius: 15px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+    }
+    &__content{
+        width: auto;
+        height: auto;
+        margin-left: 15px;
+        h6{
+            font-size: 27px;
+            line-height: 43px;
+            color: #232222;
+            font-weight: bold;
+            font-family:$font;
+        }
+    }
+    svg{
+        position: absolute;
+        top: 5;
+        right: 5;
+    }
+
+}

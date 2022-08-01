@@ -1,0 +1,11 @@
+.nuevaTrasferencia{
+    width: 100%;
+    height: 100%;
+    padding-top: 4%;
+    padding-left:4% ;
+    padding-right: 3%;
+    &__input{
+        border:none;
+        border-bottom: 1px solid black;
+    }
+}

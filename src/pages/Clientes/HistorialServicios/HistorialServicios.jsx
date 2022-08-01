@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Table from 'react-bootstrap/Table';
 import Card from 'react-bootstrap/Card';
 
 export const HistorialServicios = () => {
+  const [show, setShow] = useState(false)
   return (
     <div className='historialServicios'>
         <header className='listaClientes__header'>
@@ -38,7 +39,7 @@ export const HistorialServicios = () => {
                 
             </div>
             <div className='calendar__content'>
-                <button className='calendar__button--sm historialServicios__border'>
+                <button className='calendar__button--sm historialServicios__border' onClick={()=>setShow(!show)}>
                    Tipo de Vista
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
@@ -46,116 +47,132 @@ export const HistorialServicios = () => {
                 </button>        
             </div>  
         </div>
-        <Card className='mx-auto' style={{width:'95%', border:'unset'}}>
-            <Card.Body>
-                 
-            <Table striped hover>
-              <thead >
-                <tr>
-                  <th>
-                        Nombre del cliente
-                  </th>
-                  <th>
-                        Fecha del servicio
-                  </th>
-                  <th>
-                        Tiempo Transcurrido
-                  </th>
-                  <th>
-                        Servicios Adquiridos
-                  </th>
-                  <th>
-                        Presupuesto
-                  </th>
-                  <th>
-                        Personal de servicio
-                  </th>
-                  <th>
-                        Nota Cita
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-              <tr className='mt2'>
-                  <td className='h6' onClick={()=>setShow(true)}>
-                    Victor Marquez
-                  </td>
-                  <td className='h6'>
-                    20/04/2022
-                  </td>
-                  <td className='h6'> 
-                    2hrs 30min
-                  </td>
-                  <td className='h6'>
-                    Lavado, Secado,
-                    Tecnica de color
-                  </td>
+        {
+          show ? 
+          <Card className='mx-auto' style={{width:'95%', border:'unset'}}>
+              <Card.Body>
                   
-                    <td className='h6'>
-                        RD$ 38,500
-                    </td>
-                    <td className='h6'>
-                        Marinana  Pinto
-                    </td>
-                    <td className='h6'>
-                        Cambio de look por aniversario
-                    </td>
-                </tr>
+              <Table striped hover>
+                <thead >
+                  <tr>
+                    <th>
+                          Nombre del cliente
+                    </th>
+                    <th>
+                          Fecha del servicio
+                    </th>
+                    <th>
+                          Tiempo Transcurrido
+                    </th>
+                    <th>
+                          Servicios Adquiridos
+                    </th>
+                    <th>
+                          Presupuesto
+                    </th>
+                    <th>
+                          Personal de servicio
+                    </th>
+                    <th>
+                          Nota Cita
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
                 <tr className='mt2'>
-                  <td className='h6' onClick={()=>setShow(true)}>
-                    Victor Marquez
-                  </td>
-                  <td className='h6'>
-                    20/04/2022
-                  </td>
-                  <td className='h6'> 
-                    2hrs 30min
-                  </td>
-                  <td className='h6'>
-                    Lavado, Secado,
-                    Tecnica de color
-                  </td>
-                  
-                    <td className='h6'>
-                        RD$ 38,500
+                    <td className='h6' onClick={()=>setShow(true)}>
+                      Victor Marquez
                     </td>
                     <td className='h6'>
-                        Marinana  Pinto
+                      20/04/2022
+                    </td>
+                    <td className='h6'> 
+                      2hrs 30min
                     </td>
                     <td className='h6'>
-                        Cambio de look por aniversario
+                      Lavado, Secado,
+                      Tecnica de color
                     </td>
-                </tr>
-                <tr>
-                  <td className='h6' onClick={()=>setShow(true)}>
-                    Victor Marquez
-                  </td>
-                  <td className='h6'>
-                    20/04/2022
-                  </td>
-                  <td className='h6'> 
-                    2hrs 30min
-                  </td>
-                  <td className='h6'>
-                    Lavado, Secado,
-                    Tecnica de color
-                  </td>
-                  
-                    <td className='h6'>
-                        RD$ 38,500
+                    
+                      <td className='h6'>
+                          RD$ 38,500
+                      </td>
+                      <td className='h6'>
+                          Marinana  Pinto
+                      </td>
+                      <td className='h6'>
+                          Cambio de look por aniversario
+                      </td>
+                  </tr>
+                  <tr className='mt2'>
+                    <td className='h6' onClick={()=>setShow(true)}>
+                      Victor Marquez
                     </td>
                     <td className='h6'>
-                        Marinana  Pinto
+                      20/04/2022
+                    </td>
+                    <td className='h6'> 
+                      2hrs 30min
                     </td>
                     <td className='h6'>
-                        Cambio de look por aniversario
+                      Lavado, Secado,
+                      Tecnica de color
                     </td>
-                </tr>
-               
-              </tbody>
-            </Table>
+                    
+                      <td className='h6'>
+                          RD$ 38,500
+                      </td>
+                      <td className='h6'>
+                          Marinana  Pinto
+                      </td>
+                      <td className='h6'>
+                          Cambio de look por aniversario
+                      </td>
+                  </tr>
+                  <tr>
+                    <td className='h6' onClick={()=>setShow(true)}>
+                      Victor Marquez
+                    </td>
+                    <td className='h6'>
+                      20/04/2022
+                    </td>
+                    <td className='h6'> 
+                      2hrs 30min
+                    </td>
+                    <td className='h6'>
+                      Lavado, Secado,
+                      Tecnica de color
+                    </td>
+                    
+                      <td className='h6'>
+                          RD$ 38,500
+                      </td>
+                      <td className='h6'>
+                          Marinana  Pinto
+                      </td>
+                      <td className='h6'>
+                          Cambio de look por aniversario
+                      </td>
+                  </tr>
+                
+                </tbody>
+              </Table>
+              </Card.Body>
+          </Card> 
+          :
+          <Card className='mx-auto' style={{width:'95%', border:'unset'}}>
+            <Card.Header>
+                <div className='container row bg-white'>
+                    <h4 className='title-4 col-md-4 text-body'>Fotos del antes y el despues</h4>
+                    <h4 className='title-4 col-md-6 text-body'>Informacion del cliente</h4>
+                </div>
+            </Card.Header>
+            <Card.Body>
+              <img style={{width:'90%'}} src="../../assets/images/jarnada.png" alt="" srcset="" />
+              <img style={{width:'90%'}} src="../../assets/images/dariana.png" alt="" srcset="" />
             </Card.Body>
-        </Card>
+          </Card>
+      }
     </div>
   )
 }

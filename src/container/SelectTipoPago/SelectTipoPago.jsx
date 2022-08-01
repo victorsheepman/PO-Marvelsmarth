@@ -1,11 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Pago } from '../../Atoms/Pago'
 import { FacturaCliente } from '../FacturaCliente/FacturaCliente';
-import {ModalShadow} from '../../Atoms/ModalShadow';
-import Card from 'react-bootstrap/Card';
-import { FormCustom } from '../../Atoms/FormCustom'
-import { ButtonCustom } from '../../Atoms/ButtonCustom';
-import Button from 'react-bootstrap/Button';
+
 export const SelectTipoPago = () => {
   //const [show, setShow] = useState(false)
   return (

@@ -5,6 +5,8 @@ import { ModalShadow } from '../../Atoms/ModalShadow'
 import Card from 'react-bootstrap/Card'; 
 import { CardBody, Form } from 'reactstrap';
 import { FormCustom } from '../../Atoms/FormCustom';
+import { CheckExample } from '../../Atoms/FormCheck';
+//import Form from 'react-bootstrap/Form';
 export const Secciones = () => {
   const [show, setShow] = useState(false);
   const [modal, setModal] = useState(false);
@@ -148,6 +150,42 @@ export const Secciones = () => {
               <span className='label-title'>
                 Escogue la informacion que te gustaria recopilar de tus clientes
               </span>
+              <div className='container row'>
+                <CheckExample 
+                  title='Primer nombre'
+                  classCustom='col-md-6 '
+                />  
+                <CheckExample 
+                  title='Apellido'
+                  classCustom='col-md-6 '
+                />            
+              </div>
+              <div className='container row'>
+                <CheckExample 
+                  title='Correo'
+                  classCustom='col-md-6 '
+                />  
+                <CheckExample 
+                  title='Fecha de nacimiento'
+                  classCustom='col-md-6 '
+                />            
+              </div>
+              <div className='container row'>
+                <CheckExample 
+                  title='Num. telefono'
+                  classCustom='col-md-6 '
+                />  
+                <CheckExample 
+                  title='Genero'
+                  classCustom='col-md-6 '
+                />            
+              </div>
+              <div className='container row'>
+                <CheckExample 
+                  title='Direccion'
+                  classCustom='col-md-6 '
+                />          
+              </div>
             </Card.Body>
             <Card.Footer className='d-flex justify-content-end bg-white'>
               
