@@ -7,7 +7,7 @@ import { FormSelection } from '../../../Atoms/FormSelection';
 
 export const Contabilidad = () => {
   return (
-    <Card  style={{width:'95%', marginTop:'-170px'}}>
+    <Card  style={{width:'95%', marginTop:'30px'}}>
         <Card.Body className='ng-dark d-flex' style={{paddingLeft:'5%'}}>
             <section style={{width:'50%',height:'100%', }}>
                 <h3 className='title-3'>Por cobrar</h3>

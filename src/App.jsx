@@ -47,6 +47,27 @@ import { CategoriaProducto } from './pages/Inventario/Configuracion/CategoriaPro
 import { NuevoCategoria } from './container/NuevoCategoria/NuevoCategoria';
 import { ReglasAbastecimiento } from './pages/Inventario/Configuracion/ReglasAbastecimiento/ReglasAbastecimiento';
 import { NuevoReglasAbastecimiento } from './container/NuevoReglasAbastecimiento/NuevoReglasAbastecimiento';
+import { OrdenesProduccion } from './pages/Fabricacion/Operaciones/OrdenesProduccion';
+import { CategoriasUdm } from './pages/Inventario/CategoriasUdm/CategoriasUdm';
+import { NuevoUdm } from './container/NuevoUdm/NuevoUdm';
+import { NuevoOrdenProduccion } from './container/NuevoOrdenProduccion/NuevoOrdenProduccion';
+import { OrdenesDescontruccion } from './pages/Fabricacion/OrdenesDescontruccion/OrdenesDescontruccion';
+import { NuevoDestruccion } from './container/NuevoDestruccion/NuevoDestruccion';
+import { Desechar } from './pages/Fabricacion/Desechar/Desechar';
+import { ProductosFabricacion } from './pages/Fabricacion/Productos/Productos';
+import { VarianteProducto } from './container/VarianteProducto/VarianteProducto';
+import { ListaMateriales } from './container/ListaMateriales/ListaMateriales';
+import { NuevoListaMateriales } from './container/NuevoListaMateriales/NuevoListaMateriales';
+import { Lotes } from './container/Lotes/Lotes';
+import { NuevoLotes } from './container/NuevoLotes/NuevoLotes';
+import { OrdenesProduccionInforme } from './pages/Fabricacion/Informes/OrdenesProduccion/OrdenesProduccion';
+import { AnalisisProduccion } from './pages/Fabricacion/Informes/AnalisisProduccion/AnalisisProduccion';
+import { AjustesFab } from './pages/Fabricacion/Configuracion/AjustesFab';
+import { Configuracion } from './pages/Configuracion/Configuracion';
+import { ConfigEmpresa } from './pages/ConfigEmpresa/ConfigEmpresa';
+import { AjustesHora } from './pages/Herreria/AjustesHora/AjustesHora';
+import { AjustesIdioma } from './pages/Herreria/AjustesIdioma/AjustesIdioma';
+import { ClientesHerr } from './pages/Herreria/ClientesHerr/ClientesHerr';
 
 //Vas a hacer una "const" que será una cajita. Le pondrás el nombre de App
 
@@ -109,13 +130,34 @@ const App = () => {
                   <Route path='/categoriaProducto' element={<CategoriaProducto />} />
                   <Route path='/nuevoCategoria' element={<NuevoCategoria />} />
                   <Route path='/reglasAbastecimiento' element={<ReglasAbastecimiento />} />
-                  <Route path='/nuevoReglasAbastecimiento' element={<NuevoReglasAbastecimiento />} />
-
                   
+                  //SEMANA TRES
+                  <Route path='/nuevoReglasAbastecimiento' element={<NuevoReglasAbastecimiento />} />
+                  <Route path='/ordenesProduccion' element={<OrdenesProduccion />} />
+                  <Route path='/categoriasUdm' element={<CategoriasUdm />} />
+                  <Route path='/nuevoUdm' element={<NuevoUdm />} />
+                  <Route path='/nuevoOrdenProduccion' element={<NuevoOrdenProduccion/>} />
+                  <Route path='/ordenesDescontruccion' element={<OrdenesDescontruccion />} />
+                  <Route path='/nuevoDestruccion' element={<NuevoDestruccion />} />
+                  <Route path='/desechar' element={<Desechar />} />
+                  <Route path='/productosFabricacion' element={<ProductosFabricacion />} />
+                  <Route path='/varianteProducto' element={<VarianteProducto />} />
+                  <Route path='/listaMateriales' element={<ListaMateriales />} />
+                  <Route path='/nuevoListaMateriales' element={<NuevoListaMateriales />} />
+                  <Route path='/lotes' element={<Lotes />} />
+                  <Route path='/nuevoLotes' element={<NuevoLotes />} />
+                  <Route path='/ordenesProduccionInforme' element={<OrdenesProduccionInforme />} />
+                  <Route path='/analisisProduccion' element={<AnalisisProduccion />} />
+                  <Route path='/ajustesFab' element={<AjustesFab />} />
+                  <Route path='/configuracion' element={<Configuracion />} />
+                  <Route path='/configEmpresa' element={<ConfigEmpresa />} />                  
+                  <Route path='/ajustesHora' element={<AjustesHora />} />
+                  <Route path='/ajustesIdioma' element={<AjustesIdioma />} />
+                  <Route path='/clientesHerr' element={<ClientesHerr />} />                  
+                  
+                   
                   
                  
-                  
-                  
             </Routes>
          </Layout>}
          {/*<Login />*/}

@@ -91,9 +91,9 @@ export const NuevoProductos = () => {
         {
             (first == 5) && <Inventario /> 
         }
-        {/*
+        {
             (first == 6) ? <Contabilidad /> : <p>puta</p>
-            */
+            
         }
         
     </div>

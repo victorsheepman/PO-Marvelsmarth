@@ -1,6 +1,7 @@
 import React from 'react'
 
-export const Producto = ({ref='REF0003', variant=24, price=14.61, bootstrap}) => {
+export const Producto = ({ref='REF0003', variant=24, price=14.61, bootstrap,type=1}) => {
+
   return (
     <div className={`producto ${bootstrap}`}>
         <figure className='producto__image'>
@@ -8,7 +9,15 @@ export const Producto = ({ref='REF0003', variant=24, price=14.61, bootstrap}) =>
         </figure>
         <div className='producto__content'>
             <h6 >{ref}</h6>
-            <h6 >{variant} Variantes</h6>
+            {
+             (type == 1) ? <h6 >{variant} Variantes</h6> :
+             <div className='d-flex align-items-baseline justify-content-between '>
+                <span className='producto__circle'>
+
+                </span>
+                <h6 className='ml-4'>Laoreet id</h6>
+             </div> 
+            }
             <h6 >Precio: {price} </h6>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">

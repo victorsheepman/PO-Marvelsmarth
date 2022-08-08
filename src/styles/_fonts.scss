@@ -96,3 +96,24 @@ h1{
     font-weight: bold;
     font-family: $font;
 }
+
+.config-title{
+    font-size: 30px;
+    line-height: 33px;
+    color: #101928;
+    font-weight: bold;
+    font-family: $font;
+
+}
+.config-span{
+    font-size: 20px;
+    line-height: 27px;
+    color: #35383c;
+    font-family: $font;
+}
+.config-item{
+    font-size: 18px;
+    line-height: 17px;
+    color: #005ffd;
+    font-family: $font;
+}

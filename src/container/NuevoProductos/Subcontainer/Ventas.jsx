@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 
 export const Ventas = () => {
   return (
-    <Card style={{width:'95%', marginTop:'-50px'}}>
+    <Card style={{width:'95%', marginTop:'20px'}}>
         <Card.Body>
             <h5 className='title-3'>
                 Descripcion de ventas

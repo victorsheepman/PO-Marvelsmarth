@@ -6,7 +6,7 @@ import { FormSelection } from '../../../Atoms/FormSelection';
 
 export const Compra = () => {
   return (
-    <Card style={{width:'95%', marginTop:'-100px'}}>
+    <Card style={{width:'95%', marginTop:'20px'}}>
         <Card.Body>
             <div className='container row'>
                 <FormSelection 

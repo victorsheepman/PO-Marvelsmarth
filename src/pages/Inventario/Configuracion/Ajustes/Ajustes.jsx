@@ -1,8 +1,6 @@
 import React from 'react'
 
-import { ButtonSetup } from '../../../../Atoms/ButtonSetup'
-import { Inventario } from '../../../../components/Inventario/Inventario'
-import { SetUp } from '../../../../container/SetUp/SetUp'
+
 import Card from 'react-bootstrap/Card';
 import { CheckExample } from '../../../../Atoms/FormCheck';
 import { FormCustom } from '../../../../Atoms/FormCustom';
@@ -255,23 +253,23 @@ export const Ajustes = () => {
                 </Card.Body>
               </Card>
             </section>
-            <div className='container d-flex mt-4 justify-content-end'>
-                        <ButtonCustom 
-                            styles={{
-                                background: '#101928',
-                                color: '#f6c94c',
-                            }}
-                            title='Cancelar'
-                        />   
-                        <ButtonCustom 
-                            styles={{
-                                background:'#f6c94c',
-                                color:'#101928',
-                                marginLeft:'4%'
-                            }}
-                            title='Guardar'
-                        />  
-                </div>
+              <div className='container d-flex mt-4 justify-content-end'>
+                          <ButtonCustom 
+                              styles={{
+                                  background: '#101928',
+                                  color: '#f6c94c',
+                              }}
+                              title='Cancelar'
+                          />   
+                          <ButtonCustom 
+                              styles={{
+                                  background:'#f6c94c',
+                                  color:'#101928',
+                                  marginLeft:'4%'
+                              }}
+                              title='Guardar'
+                          />  
+                  </div>
         </div>
     
 

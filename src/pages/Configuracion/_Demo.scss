@@ -1,0 +1,17 @@
+.demo{
+    width: 151px;
+    height: 57px;
+    border-radius: 10px;
+   // background-color: #000000;
+    border: 3px solid #2db547;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 30px;
+        line-height: 33px;
+        color: #2db547;
+        font-weight: bold;
+        font-family: $font;
+    }
+}
