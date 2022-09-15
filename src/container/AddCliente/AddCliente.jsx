@@ -8,6 +8,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { ButtonCustom } from '../../Atoms/ButtonCustom';
 import { Switch } from '../../Atoms/Switch';
+import { CheckExample } from '../../Atoms/FormCheck';
 export const AddCliente = () => {
   return (
     <div className='add'>
@@ -55,8 +56,9 @@ export const AddCliente = () => {
                               <FormCustom 
                                 title='Año'
                                 classCustom='col-md-4'
-                                type='number'
-                                holder='id del cliente'
+                                type='text'
+                                holder='Año'
+                                alpha={true}
                             />
                     </div>
                     <div className='container row mt-3 '>
@@ -85,11 +87,43 @@ export const AddCliente = () => {
                          <FormCustom 
                             title='Codigo Postal'
                             classCustom='col-md-4'
-                            type='number'
+                            type='text'
                             holder='codigo postal'
+                            alpha={true}
                         />
                     </div>
-                    <div className='container row mt-3 '>
+                    <div className='container row mt-3'>
+                        <Form.Group className="col-md-4 ">  
+                            <Form.Label className='label-title'>Telefono de Emergencia</Form.Label>
+                                <InputGroup>
+                                    
+                                    <DropdownButton
+                                        variant="outline-secondary"
+                                            title="+1"
+                                            id="input-group-dropdown-1"
+                                        >
+                                            <Dropdown.Item href="#">+58</Dropdown.Item>
+                                            <Dropdown.Item href="#">+23</Dropdown.Item>
+                                    </DropdownButton>
+                                    <Form.Control aria-label="Text input with dropdown button" />
+                                </InputGroup>
+                        </Form.Group>
+                        <FormCustom 
+                            title='Fecha de registro'
+                            classCustom='col-md-4'
+                            type='date'
+                            holder='id del cliente'
+                        /> 
+                        <FormSelection 
+                            title='¿Aplica para credito?'
+                            classCustom='col-md-4'
+                        >
+                            <option value="Hombre">Si</option>
+                            <option value="Mujer">No</option>
+                        </FormSelection>
+
+                    </div>
+                     <div className='container row mt-3 '>
                         <FormCustom 
                             title='Provincia'
                             classCustom='col-md-4'
@@ -136,13 +170,7 @@ export const AddCliente = () => {
                             type='text'
                             holder='Distrito del cliente'
                         />
-                        <FormSelection 
-                            title='Aplica para credito?'
-                            classCustom='col-md-4'
-                        >
-                            <option value="Hombre">Si</option>
-                            <option value="Mujer">No</option>
-                        </FormSelection>
+                       
                         <ButtonCustom 
                             classe='col-md-4 mt-6'
                             styles={{
@@ -151,41 +179,29 @@ export const AddCliente = () => {
                                 color:'#ffffff',
                                 margin:'31px'
                             }}
-                            title='Guardar'
+                            title='Guardar informacion'
                             
                         />
                     </div>
                 </Card.Body>
             </Card>
             <Card className='mt-3'>
-                <Card.Header>
-                <h3>Informacion importante del cliente</h3>
+                <Card.Header style={{backgroundColor:'white'}}>
+                    <h3>Informacion importante del cliente</h3>
                 </Card.Header>
                 <Card.Body>
-                    <div className='container row mt-3'>
-                        <Form.Group className="col-md-6 ">  
-                            <Form.Label className='label-title'>Telefono de Emergencia</Form.Label>
-                            <InputGroup>
-                                
-                                <DropdownButton
-                                    variant="outline-secondary"
-                                        title="+1"
-                                        id="input-group-dropdown-1"
-                                    >
-                                        <Dropdown.Item href="#">+58</Dropdown.Item>
-                                        <Dropdown.Item href="#">+23</Dropdown.Item>
-                                    </DropdownButton>
-                                    <Form.Control aria-label="Text input with dropdown button" />
-                                </InputGroup>
+                    <p className='body-md text-left text-body'>
+                        La informacion importante del cliente solo sera visible para ti y para los miembros del equipo
+                    </p>
+                    <Form>
+                        <Form.Group className="mb-3 mt-4" controlId="exampleForm.ControlTextarea1">
+                            <Form.Label>informacion del cliente</Form.Label>
+                            <Form.Control as="textarea" rows={5} placeholder='Agregue unas notas sobre la cita' />
                         </Form.Group>
-                        <FormCustom 
-                            title='Fecha de registro'
-                            classCustom='col-md-6'
-                            type='date'
-                            holder='id del cliente'
-                        /> 
-                    </div>
-                    
+                    </Form>
+                    <CheckExample 
+                        title='Mostrar en todas las reservas'
+                    />
                 </Card.Body>
             </Card>
            

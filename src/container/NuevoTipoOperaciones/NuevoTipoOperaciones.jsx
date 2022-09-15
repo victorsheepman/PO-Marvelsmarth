@@ -27,7 +27,7 @@ import { FormSelection } from '../../Atoms/FormSelection';
                                   
                     }
                     }
-                    title='Tipo de operacion'
+                    title='Tipo de operación'
                     classCustom='col-md-6 d-flex align-items-baseline'
                     classInput='nuevaTrasferencia__input'
                     type='text'
@@ -48,25 +48,25 @@ import { FormSelection } from '../../Atoms/FormSelection';
                                   
                     }
                     }
-                    title='Codigo'
+                    title='Código'
                     classCustom='col-md-6 d-flex align-items-baseline'
                     classInput='nuevaTrasferencia__input'
                     type='text'
                     holder=''
                   />
                    <div className='col-md-6 row'>
-                      <p className='label-title col-md-6'>Metodo de reservacion:</p>
+                      <p className='label-title col-md-6'>Método de reservacion:</p>
                       <div className='col-md-6'>
                         <CheckExample 
-                          title='Tipo de operacion'
+                          title='Tipo de operación'
                           
                         />  
                         <CheckExample 
-                          title='Codigo'
+                          title='Código'
                           
                         />  
                          <CheckExample 
-                          title='Codigo de barras'
+                          title='Código de barras'
                           
                         />  
                       </div>
@@ -84,7 +84,7 @@ import { FormSelection } from '../../Atoms/FormSelection';
                                   
                     }
                     }
-                    title='Codigo de barras '
+                    title='Código de barras '
                     classCustom='col-md-6 d-flex align-items-baseline'
                     classInput='nuevaTrasferencia__input'
                     type='text'
@@ -94,7 +94,7 @@ import { FormSelection } from '../../Atoms/FormSelection';
               </Card.Body>
               <Card.Body>
                 <h3 className='title-3'>
-                  Ubicaiones
+                  Ubicaciones
                 </h3>
                 <FormSelection 
                   styles={

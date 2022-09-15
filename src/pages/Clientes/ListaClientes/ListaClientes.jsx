@@ -52,13 +52,13 @@ export const ListaClientes = () => {
             Consulta, añade, edita y elimina informacion del cliente.
         </span>
         <div className='calendar__header mt-4'>
-            <InputGroup style={{borderRadius:'30px', width:'200px' }}>
-            <Form.Control
-                style={{borderRadius:'30px',}}
-                placeholder="Buscar por Cliente o miembro del servicio"
-                aria-label="Username"
-                aria-describedby="basic-addon1"
-            />
+            <InputGroup style={{borderRadius:'30px', width:'400px' }}>
+              <Form.Control
+                  style={{borderRadius:'30px',}}
+                  placeholder="Buscar por Cliente o miembro del servicio"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+              />
             </InputGroup>
             <button className='calendar__button'>
                 Filtros
@@ -86,7 +86,7 @@ export const ListaClientes = () => {
                         Nombre del cliente
                   </th>
                   <th>
-                        Numero de movil
+                    Número de movil
                   </th>
                   <th>
                         Genero

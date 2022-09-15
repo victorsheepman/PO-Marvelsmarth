@@ -49,7 +49,9 @@ export const HistorialVentas = () => {
             <Table striped hover>
               <thead >
                 <tr>
-                  <th>num de facturas</th>
+                  <th>
+                  No. de factura
+                  </th>
                   <th>
                     Cliente
                   </th>

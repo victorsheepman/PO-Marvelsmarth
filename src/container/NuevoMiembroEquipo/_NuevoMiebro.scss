@@ -1,0 +1,12 @@
+.profile{
+    width: 177px;
+    height: 177px;
+    background-color: $color-blue;
+    border-radius: 50%;
+    &--sm{
+        width: 65px;
+        height: 65px;
+        background-color: $color-blue;
+        border-radius: 10px;
+    }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import{ButtonLink} from '../ButtonLink/ButtonLink'
 export const Header = () => {
   return (
-    <header className='header'>
+    <header className='header fixed-top'>
         <figure>
             <img src="../assets/images/logo.png" alt="" />
         </figure>
@@ -18,8 +18,13 @@ export const Header = () => {
            <ButtonLink 
             dir='images'
             src='campana.png'
-          />
+          /> 
+            
         </div>
+        <figure className='header__figure'>
+
+        </figure>
+       
     </header>
   )
 }

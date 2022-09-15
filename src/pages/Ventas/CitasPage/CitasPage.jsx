@@ -46,7 +46,7 @@ export const CitasPage = () => {
             <Table striped bordered hover>
               <thead>
                 <tr>
-                  <th>ref</th>
+                  <th>Ref</th>
                   <th>
                     Dia de creacion
                   </th>

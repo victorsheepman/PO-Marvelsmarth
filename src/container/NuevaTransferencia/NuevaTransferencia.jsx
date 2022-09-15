@@ -10,7 +10,7 @@ export const NuevaTransferencia = () => {
         <header className='listaClientes__header'>
             <h3 className='ListaClientes' style={{color:'#f6c84c', fontSize:'40px'}}>Tranferencia / nueva</h3>
         </header>
-        <Card className='mx-auto'>
+        <Card className='mx-auto mt-4'>
             <Card.Body>
                 <div className='container row '>
                     <FormCustom 

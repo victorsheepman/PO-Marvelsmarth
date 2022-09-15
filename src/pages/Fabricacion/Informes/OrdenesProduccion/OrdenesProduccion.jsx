@@ -6,7 +6,7 @@ export const OrdenesProduccionInforme = () => {
   return (
     <div className='historialServicios'>
         <header className='listaClientes__header justify-content-between px-4'>
-            <h3 className='ListaClientes' style={{color:'#f6c84c',fontSize:'35px'}}>Ordenes de produccion</h3>
+            <h3 className='ListaClientes' style={{color:'#f6c84c',fontSize:'35px'}}>órdenes de producción</h3>
             <ButtonCustom 
                 title='Medidas'
                 styles={{

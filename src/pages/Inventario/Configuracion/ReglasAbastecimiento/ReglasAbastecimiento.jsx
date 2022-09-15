@@ -38,10 +38,10 @@ export const ReglasAbastecimiento = () => {
             <Card.Body className='d-flex flex-column justify-content-center align-items-center'>
                 
                 <h3 className='title-3'>
-                    No se encontro ninguna ubicacion
+                    No se encontro ninguna regla de abastecimiento
                 </h3>
                 <span className='caption'>
-                    Utilizar el boton de 'clear' y anade una nueva ubicacion
+                    Utilizar el boton de 'clear' y añade una nueva ubicacion
                 </span>
             </Card.Body>
         </Card>

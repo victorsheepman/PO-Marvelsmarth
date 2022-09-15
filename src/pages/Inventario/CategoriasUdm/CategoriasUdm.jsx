@@ -10,7 +10,7 @@ export const CategoriasUdm = () => {
   return (
     <div className='historialServicios'>
         <header className='listaClientes__header'>
-            <h3 className='ListaClientes' style={{color:'#f6c84c',fontSize:'35px'}}>Categorias de las unidades de medida</h3>
+            <h3 className='ListaClientes' style={{color:'#f6c84c',fontSize:'35px'}}>Categoría de las unidades de medida</h3>
         </header>
         <SetUp >
             <ButtonCustom 
@@ -44,7 +44,7 @@ export const CategoriasUdm = () => {
                         <CheckExample />
                     </th>
                     <th>
-                          Categorias de unidades  de medida
+                        Categoría de unidades  de medida
                     </th>
                     <th>
                         UdM

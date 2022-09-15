@@ -103,6 +103,7 @@ export const NuevoListaMateriales = () => {
                     styles={{
                         background: 'white',
                         color: 'black',
+
                     }}
                     title='Componentes'
                     handle={handleOpen}

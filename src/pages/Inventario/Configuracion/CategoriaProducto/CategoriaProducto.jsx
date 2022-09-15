@@ -48,7 +48,7 @@ export const CategoriaProducto = () => {
                         <CheckExample />
                     </th>
                     <th>
-                          Categoria de producto
+                      Categoría de producto
                     </th>
                   </tr>
                 </thead>

@@ -7,6 +7,7 @@ import Badge from 'react-bootstrap/Badge';
 import Table from 'react-bootstrap/Table';
 import Card from 'react-bootstrap/Card';
 import { CheckExample } from '../../Atoms/FormCheck';
+import { ModalShadow } from '../../Atoms/ModalShadow';
 export const Transferencia = () => {
   return (
     <div className='historialServicios'>
@@ -174,7 +175,8 @@ export const Transferencia = () => {
                 </tbody>
               </Table>
               </Card.Body>
-          </Card> 
+          </Card>
+        
     </div>
   )
 }

@@ -42,10 +42,10 @@ export const ReglasEstrateguia = () => {
                         Categoria de producto
                     </th>
                     <th>
-                        Almacenar en sububicacion
+                        Sub-ubicación
                     </th>
                     <th>
-                        Compañia
+                        Nombre del recurso
                     </th>
                 </tr>
                 </thead>

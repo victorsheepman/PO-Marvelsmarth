@@ -11,7 +11,7 @@ export const OrdenesProduccion = () => {
   return (
     <div className='historialServicios'>
         <header className='listaClientes__header'>
-            <h3 className='ListaClientes' style={{color:'#f6c84c',fontSize:'35px'}}>Orden de produccion</h3>
+            <h3 className='ListaClientes' style={{color:'#f6c84c',fontSize:'35px'}}>órdenes de producción</h3>
         </header>
         <SetUp >
             <ButtonCustom 

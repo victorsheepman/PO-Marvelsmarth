@@ -16,7 +16,7 @@ export const NuevoProductos = () => {
   return (
     <div className='nuevoProductos'>
         <header className='listaClientes__header'>
-            <h3 className='ListaClientes' style={{color:'#f6c84c',fontSize:'35px'}}>Prodcutos / Nuevo</h3>
+            <h3 className='ListaClientes' style={{color:'#f6c84c',fontSize:'35px'}}>Productos / Nuevo</h3>
         </header>
         <Card className='nuevoProductos__card' style={{backgroundColor:'#f6c94c'}}>
             <Card.Body className='d-flex'>

@@ -51,14 +51,12 @@ export const NuevaCita = () => {
           </Card.Body>
         </Card>
 
-        <span className='cita__caption' >notas de la cita</span>
-        <Card>
-          <Card.Body>
-            <textarea style={{witdh:'100%'}}>
-              
-            </textarea>
-          </Card.Body>
-        </Card>
+        <span className='cita__caption'>Notas de la cita</span>
+        <Form>
+          <Form.Group className="mb-3 mt-3" controlId="exampleForm.ControlTextarea1">
+              <Form.Control as="textarea" rows={5} placeholder='Agregue unas notas sobre la cita' />
+          </Form.Group>
+        </Form>
       </section>
       <section className='cita__list'>
           <Card className='cita__list__content' >

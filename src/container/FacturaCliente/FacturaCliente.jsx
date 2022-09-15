@@ -33,7 +33,7 @@ export const FacturaCliente = () => {
                     <p className='caption text-body'>12.000 DOP</p>
                 </div>
                 <div className='facturaCliente__space'>
-                    <p className='caption text-body'>Taxes & Fees</p>
+                    <p className='caption text-body'>Impuestos & Comisiones</p>
                     <p className='caption text-body'>0 DOP</p>
                 </div>
                 <div className='facturaCliente__space'>

@@ -68,6 +68,54 @@ import { ConfigEmpresa } from './pages/ConfigEmpresa/ConfigEmpresa';
 import { AjustesHora } from './pages/Herreria/AjustesHora/AjustesHora';
 import { AjustesIdioma } from './pages/Herreria/AjustesIdioma/AjustesIdioma';
 import { ClientesHerr } from './pages/Herreria/ClientesHerr/ClientesHerr';
+import { RazonCancelacion } from './pages/Herreria/RazonCancelacion/RazonCancelacion';
+import { Referencia } from './pages/Herreria/Referencia/Referencia';
+import { NotificacionCliente } from './pages/Herreria/NotificacionCliente/NotificacionCliente';
+import { ClientesSer } from './pages/Herreria/ClientesSer/ClientesSer';
+import { MenuServicios } from './pages/Herreria/MenuServicios/MenuServicios';
+import { AddServicio } from './pages/Herreria/AddServicio/AddServicio';
+import { CentroCosto } from './pages/Herreria/CentroCosto/CentroCosto';
+import { DetallesServ } from './pages/Herreria/DetallesServ/DetallesServ';
+import { NuevoServ } from './components/NuevoServ';
+import { NuevoPaquete } from './components/NuevoPaquete';
+import { Usuarios } from './pages/Herreria/Usuarios/Usuarios';
+import { NuevoMiembroEquipo } from './container/NuevoMiembroEquipo/NuevoMiembroEquipo';
+import { TerminosPago } from './pages/Herreria/TerminosPago/TerminosPago';
+import { NumeracionDoc } from './pages/Herreria/NumeracionDoc/NumeracionDoc';
+import { ConfigFacturas } from './pages/Herreria/ConfigFacturas/ConfigFacturas';
+import { Vendedores } from './pages/Herreria/Vendedores/Vendedores';
+import { ConfigPantallas } from './pages/Herreria/ConfigPantallas/ConfigPantallas';
+import { Impuestos } from './pages/Herreria/Impuestos/Impuestos';
+import { Retenciones } from './pages/Herreria/Retenciones/Retenciones';
+import { ReportesFisc } from './pages/Herreria/ReportesFisc/ReportesFisc';
+import { FechaUpdate } from './pages/Herreria/FechaUpdate/FechaUpdate';
+import { EditNotifi } from './pages/Herreria/EditNotifi/EditNotifi';
+import { PlantillaCorreos } from './pages/Herreria/PlantillaCorreos/PlantillaCorreos';
+import { CamposAdd } from './pages/Herreria/CamposAdd/CamposAdd';
+import { ApiIntegration } from './pages/Herreria/ApiIntegration/ApiIntegration';
+import { PagoLinea } from './pages/Herreria/PagoLinea/PagoLinea';
+import { Centros } from './pages/Herreria/Centros/Centros';
+import { ModelosActivos } from './pages/Herreria/ModelosActivos/ModelosActivos';
+import { NuevoModeloActivo } from './container/NuevoModeloActivo/NuevoModeloActivo';
+import { FechasCerradas } from './pages/Herreria/FechasCerradas/FechasCerradas';
+import { Equipo } from './pages/Herreria/Equipo/Equipo';
+import { HorarioLaboral } from './pages/Herreria/HorarioLaboral/HorarioLaboral';
+import { Comisiones } from './pages/Herreria/Comisiones/Comisiones';
+import { ProgramaLealtad } from './pages/Herreria/ProgramaLealtad/ProgramaLealtad';
+import { NuevoLealtad } from './container/NuevoLealtad/NuevoLealtad';
+import { CrearRecompensa } from './pages/Herreria/CrearRecompensa/CrearRecompensa';
+import { CrearRegla } from './pages/Herreria/CrearRegla/CrearRegla';
+import { ListaEspera } from './pages/Herreria/ListaEspera/ListaEspera';
+import { CatalogoCuenta } from './pages/Contabilidad/CatalogosCuenta/CatalogoCuenta';
+import { EntradasDiario } from './pages/Contabilidad/EntradasDiario/EntradasDiario';
+import { LibroDiario } from './pages/Contabilidad/LibroDiario/LibroDiario';
+import { ReportesContables } from './pages/Contabilidad/ReportesContables/ReportesContables';
+import { Bancos } from './pages/Contabilidad/Bancos/Bancos';
+import { Presupuesto } from './pages/Ventas/Presupuesto/Presupuesto';
+import { NuevoProveedor } from './container/NuevoProveedor/NuevoProveedor';
+import { FacturaProveedores } from './container/FacturaProveedores/FacturaProveedores';
+import { FacturaProveedoresClientes } from './container/FacturaProveedores/FacturasProveedoresClientes';
+import { LibroMayor } from './container/FacturaProveedores/LibroMayor';
 
 //Vas a hacer una "const" que será una cajita. Le pondrás el nombre de App
 
@@ -125,7 +173,7 @@ const App = () => {
                   <Route path='/nuevoUbicaciones' element={<NuevoUbicacion />} />
                   <Route path='/tiposOperaciones' element={<TiposOperaciones />} />
                   <Route path='/nuevoTipoOperaciones' element={<NuevoTipoOperaciones /> } />
-                  <Route path='/reglasEstrateguia' element={<ReglasEstrateguia />} />
+                  <Route path='/reglasEstrategias' element={<ReglasEstrateguia />} />
                   <Route path='/nuevoReglasTraslado' element={<NuevoReglasTraslado />} />
                   <Route path='/categoriaProducto' element={<CategoriaProducto />} />
                   <Route path='/nuevoCategoria' element={<NuevoCategoria />} />
@@ -155,6 +203,97 @@ const App = () => {
                   <Route path='/ajustesIdioma' element={<AjustesIdioma />} />
                   <Route path='/clientesHerr' element={<ClientesHerr />} />                  
                   
+                  //SEMANA CUARTRO 
+                  <Route path='/razonCancelacion' element={<RazonCancelacion />} /> 
+                  <Route path='/referencia' element={<Referencia />} /> 
+                  <Route path='/notificacionCliente' element={<NotificacionCliente />} />
+                  <Route path='/clienteSer' element={<ClientesSer />} /> 
+                  <Route path='/menuServicios' element={<MenuServicios />} />
+                  <Route path='/addServicio' element={<AddServicio />} />
+                  <Route path='/centroCosto' element={<CentroCosto />} /> 
+                  <Route path='/detallesServ' element={<DetallesServ />} />
+                  <Route path='/nuevoServ' element={<NuevoServ />} /> 
+                  <Route path='/nuevoPaquete' element={<NuevoPaquete />} />
+                  <Route path='/usuarios' element={<Usuarios />} />  
+                  <Route path='/nuevoMiembroEquipo' element={<NuevoMiembroEquipo />} /> 
+                  <Route path='/terminosPago' element={<TerminosPago />} />
+
+                  //SEMANA Cinco   
+                  <Route path='/numeracionDoc' element={<NumeracionDoc />} />
+                  <Route path='/configFacturas' element={<ConfigFacturas />} /> 
+                  <Route path='/vendedores' element={<Vendedores />} /> 
+                  <Route path='/configPantallas' element={<ConfigPantallas />} /> 
+                  <Route path='/impuestos' element={<Impuestos />} />
+                  <Route path='/retenciones' element={<Retenciones />} /> 
+                  <Route path='/reportesFisc' element={<ReportesFisc />} />
+                  <Route path='/fechaUpdate' element={<FechaUpdate />} /> 
+
+                  <Route path='/editarNotificacion' element={<EditNotifi />} /> 
+                  <Route path='/plantillaCorreos' element={<PlantillaCorreos  />} /> 
+                  <Route path='/camposAdd' element={<CamposAdd  />} />
+                  <Route path='/apiIntegration' element={<ApiIntegration  />} /> 
+                  <Route path='/pagoLinea' element={<PagoLinea  />} />
+                  <Route path='/centros' element={<Centros  />} />
+                  
+                  <Route path='/modelosActivos' element={<ModelosActivos  />} />
+                  <Route path='/nuevoModeloActivo' element={<NuevoModeloActivo  />} />
+                  <Route path='/fechasCerradas' element={<FechasCerradas  />} />
+                  <Route path='/equipo' element={<Equipo  />} />
+                  <Route path='/horarioLaboral' element={<HorarioLaboral />} />
+                  <Route path='/comisiones' element={<Comisiones />} />
+                  <Route path='/programaLealtad' element={<ProgramaLealtad />} />
+                  <Route path='/nuevoLealtad' element={<NuevoLealtad />} />
+                  <Route path='/crearRecompensa' element={<CrearRecompensa />} />
+                  <Route path='/crearRegla' element={<CrearRegla />} />
+                  <Route path='/listaEspera' element={<ListaEspera />} />
+                  <Route path='/catalogoCuenta' element={<CatalogoCuenta />} />
+                  <Route path='/entradasDiario' element={<EntradasDiario />} />
+                  <Route path='/libroDiario' element={<LibroDiario />} />
+
+                  <Route path='/reportesContables' element={<ReportesContables />} />
+                  <Route path='/Bancos' element={<Bancos />} />
+                  <Route path='/Presupuesto' element={<Presupuesto />} />
+                  <Route path='/nuevoProveedor' element={<NuevoProveedor />} />
+                  <Route path='/facturaProveedores' element={<FacturaProveedores />} />
+                  <Route path='/facturaProveedoresClientes' element={<FacturaProveedoresClientes />} />
+                  <Route path='/LibroMayor' element={<LibroMayor />} />
+                  
+                  
+
+                  
+
+                  
+         
+                  
+                  
+
+
+
+                  
+                  
+                   
+
+                  
+
+                   
+                  
+                  
+
+                  
+                  
+                  
+                  
+
+
+                  
+                  
+                  
+                  
+
+                  
+                   
+                  
+
                    
                   
                  

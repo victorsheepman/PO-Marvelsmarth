@@ -6,7 +6,9 @@ export const ConfigEmpresa = () => {
   return (
     <div className='historialServicios'>
         <header className='listaClientes__header flex-column align-items-start' style={{marginTop:'30px'}}>
-            <h3 className='ListaClientes' style={{color:'#f6c84c',fontSize:'35px'}}>Configuracion Empresa</h3>
+            <h3 className='ListaClientes' style={{color:'#f6c84c',fontSize:'35px'}}>
+                Configuracion Empresa
+                </h3>
             <p className='body-md mt-3'>Ve, filtra y exporta las citas agregadas por el cliente</p>        
         </header>
         <Card className='mx-auto mt-5' style={{width:'95%'}}>
@@ -35,7 +37,7 @@ export const ConfigEmpresa = () => {
                             classCustom='col-md-6'
                         />
                         <FormCustom
-                            title='Rnc o cedula'
+                            title='RNC/Cédula'
                             type='text'
                             holder='Agrega un titulo'
                             classCustom='col-md-6'

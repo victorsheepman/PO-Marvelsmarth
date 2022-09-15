@@ -10,7 +10,7 @@ export const OrdenesDescontruccion = () => {
   return (
     <div className='historialServicios'>
         <header className='listaClientes__header'>
-            <h3 className='ListaClientes' style={{color:'#f6c84c',fontSize:'35px'}}>Ordenes de descontruccion</h3>
+            <h3 className='ListaClientes' style={{color:'#f6c84c',fontSize:'35px'}}>órdenes de desconstrucción</h3>
         </header>
         <SetUp >
             <ButtonCustom 

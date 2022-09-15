@@ -4,12 +4,22 @@
     background-color: $color-yellow;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    //justify-content: space-between;
     padding-left: 10%;
     padding-right: 2%;
+    height: 94px;
     &__icon{
         width: auto;
         height: 100%;
         display: flex;
+        margin-left: 40%;
+        
+    }
+    &__figure{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: aqua;
+        margin-left: 10%;
     }
 }

@@ -43,7 +43,7 @@ export const Almacenes = () => {
                         <CheckExample />
                     </th>
                     <th>
-                        Almacen
+                        Nombre del almacen
                     </th>
                     <th>
                         Ubicacion de stock

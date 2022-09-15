@@ -73,7 +73,7 @@ export const DatosFactura = ({setShow, show}) => {
                 </Figure>
             </div>
             <ButtonCustom 
-                title='Datos de facturacion'
+                title='Datos de facturación'
                 styles={
                     {
                         width:'80%',
@@ -89,10 +89,10 @@ export const DatosFactura = ({setShow, show}) => {
             />
         </section>
         <section className='datosFactura__content'> 
-        <p className='subtitle'>Historial Ventas</p>
+        <p className='subtitle'>Datos de facturación</p>
             <Card className='mx-auto'>
                 <Card.Body className='d-flex flex-column align-items-center'>
-                    <p className='title-3 text-body'>Invonce #5</p>
+                    <p className='title-3 text-body'>Factura #5</p>
                     <span className='caption'>miercoles, 18 may. 2022</span>
                     <span className='caption mt-1'>
                         Facturado a Karen popa

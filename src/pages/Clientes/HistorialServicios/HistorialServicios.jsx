@@ -163,7 +163,7 @@ export const HistorialServicios = () => {
           <Card className='mx-auto' style={{width:'95%', border:'unset'}}>
             <Card.Header>
                 <div className='container row bg-white'>
-                    <h4 className='title-4 col-md-4 text-body'>Fotos del antes y el despues</h4>
+                    <h4 className='title-4 col-md-4 text-body'>Fotos del antes y el después</h4>
                     <h4 className='title-4 col-md-6 text-body'>Informacion del cliente</h4>
                 </div>
             </Card.Header>

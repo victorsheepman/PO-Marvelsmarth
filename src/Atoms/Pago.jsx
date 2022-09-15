@@ -41,9 +41,10 @@ export const Pago = ({title, src, bootstrap}) => {
                 <p className='caption--sm  text-body'>3000 DOP</p>
             </div>
             <FormCustom
-              title='Cantidad brindada por el cliente'
+              title='Monto recibido por el cliente'
               type='text'
               classCustom='w-100 mt-3'
+              holder=''
             />
             <span className="text-muted">
               Cambio de 1000 DOP

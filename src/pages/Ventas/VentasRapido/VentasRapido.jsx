@@ -5,7 +5,7 @@ export const VentasRapido = () => {
   return (
     <div className='ventasrapido'>
         <section className='ventasrapido__header'>
-            <p className='subtitle'>Resumen de ventas rapido</p>
+            <p className='subtitle'>Resumen de ventas rápido</p>
             <p className='body-md'>Ve, filtra y exporta el movimiento de las transacciones y la caja por un dia determinado</p>
         </section>
         <div className='calendar__header'>
@@ -40,7 +40,7 @@ export const VentasRapido = () => {
                     <thead>
                         <tr>
                         <th>Tipo de articulo</th>
-                        <th>cont. de ventas</th>
+                        <th>Cont. de ventas</th>
                         <th>Cant. Reembolsada</th>
                         <th>Total Bruto</th>
                         </tr>

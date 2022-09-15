@@ -18,6 +18,14 @@ export const Sidebar = props => {
         <ButtonLink src={'07.svg'} />
         <ButtonLink src={'08.svg'} />
         <ButtonLink src={'09.svg'} />
+        <ButtonLink src={'09.svg'} />
+        <ButtonLink 
+          dir='images' 
+          src={'dinero.png'}
+          styles={{
+            width:'50%'
+          }}
+        />
         {
          show &&  <Aside setShow={setShow} />
         }

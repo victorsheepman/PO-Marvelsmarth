@@ -46,7 +46,7 @@ export const NuevoUbicacion = () => {
                 </div>   
                 <div className='row'>
                     <h3 className='title-3 col-md-6'>Informacion adicional</h3>
-                    <h3 className='title-3 col-md-6'>Conteo ciclico</h3>
+                    <h3 className='title-3 col-md-6'>Conteo cíclico</h3>
 
                 </div>
                 <div className='row'>
@@ -97,7 +97,7 @@ export const NuevoUbicacion = () => {
                                 
                             }
                         }
-                        title='Ultimo inventario efectivo'
+                        title='último inventario efectivo'
                         classCustom='col-md-6 d-flex align-items-baseline'
                         classInput='nuevaTrasferencia__input'
                         type='text'
@@ -136,7 +136,7 @@ export const NuevoUbicacion = () => {
                                 
                             }
                         }
-                        title='Codigo de barras'
+                        title='Código de barras'
                         classCustom='col-md-6 d-flex align-items-baseline'
                         classInput='nuevaTrasferencia__input'
                         type='text'
