@@ -116,6 +116,12 @@ import { NuevoProveedor } from './container/NuevoProveedor/NuevoProveedor';
 import { FacturaProveedores } from './container/FacturaProveedores/FacturaProveedores';
 import { FacturaProveedoresClientes } from './container/FacturaProveedores/FacturasProveedoresClientes';
 import { LibroMayor } from './container/FacturaProveedores/LibroMayor';
+import { Permisos } from './pages/Herreria/Permisos/Permisos';
+import { PresupuestoEmpty } from './container/Presupuesto/Presupuesto';
+import { DatosFacturacion } from './container/DatosFacturacion/DatosFacturacion';
+import { ImpresionCuadre } from './container/ImpresionCuadre/ImpresionCuadre';
+import { Roles } from './pages/Herreria/Roles/Roles';
+import { UsuarioRol } from './pages/Herreria/UsuariosRol/UsuarioRol';
 
 //Vas a hacer una "const" que será una cajita. Le pondrás el nombre de App
 
@@ -135,7 +141,7 @@ const App = () => {
                   <Route path="/calendar" element={<CalendarPage />} />//3
                   <Route path="/cita" element={<NuevaCita />} />//4
                   <Route path="/addCliente" element={<AddCliente />} />//6
-                  <Route path='/FacturaAbierta' element={<FacturaAbierta />} />//8
+                  //8
                   <Route path='/login' element={<Login />} />
 
                   //SEMANA UNO
@@ -181,10 +187,10 @@ const App = () => {
                   
                   //SEMANA TRES
                   <Route path='/nuevoReglasAbastecimiento' element={<NuevoReglasAbastecimiento />} />
-                  <Route path='/ordenesProduccion' element={<OrdenesProduccion />} />
+                  
                   <Route path='/categoriasUdm' element={<CategoriasUdm />} />
                   <Route path='/nuevoUdm' element={<NuevoUdm />} />
-                  <Route path='/nuevoOrdenProduccion' element={<NuevoOrdenProduccion/>} />
+                
                   <Route path='/ordenesDescontruccion' element={<OrdenesDescontruccion />} />
                   <Route path='/nuevoDestruccion' element={<NuevoDestruccion />} />
                   <Route path='/desechar' element={<Desechar />} />
@@ -257,6 +263,22 @@ const App = () => {
                   <Route path='/facturaProveedores' element={<FacturaProveedores />} />
                   <Route path='/facturaProveedoresClientes' element={<FacturaProveedoresClientes />} />
                   <Route path='/LibroMayor' element={<LibroMayor />} />
+                 
+                 
+
+                  //REstantes
+                  <Route path='/ordenesProduccion' element={<OrdenesProduccion />} />
+                  <Route path='/nuevoOrdenProduccion' element={<NuevoOrdenProduccion/>} />
+                  <Route path='/Presupuesto' element={<Presupuesto />} />
+                  <Route path='/FacturaAbierta' element={<FacturaAbierta />} />  
+                   <Route path='/DatosFacturacion' element={<DatosFacturacion />} />
+                  <Route path='/ImpresionCuadre' element={<ImpresionCuadre />} />
+                  <Route path='/Roles' element={<Roles />} />
+                  <Route path='/UsurioRoles' element={<UsuarioRol />} />
+                   <Route path='/Permisos' element={<Permisos />} />
+                  <Route path='/PresupuestoEmpty' element={<PresupuestoEmpty />} />
+
+                  
                   
                   
 

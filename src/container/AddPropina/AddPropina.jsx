@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
+import { ModalShadow } from '../../Atoms/ModalShadow';
 import { Propina } from '../../Atoms/Propina';
 import { FacturaCliente } from '../FacturaCliente/FacturaCliente';
-
+import Card from 'react-bootstrap/Card';
+import { FormCustom } from '../../Atoms/FormCustom';
+import { ButtonCustom } from '../../Atoms/ButtonCustom';
 export const AddPropina = () => {
     const [number, setNumber] = useState(0)
+    const [show, setShow] = useState(true)
   return (
     <div className='addPropina'>
         <section className='addPropina__form'>
@@ -58,6 +62,109 @@ export const AddPropina = () => {
         <section className='addPropina__list'>
              <FacturaCliente />
         </section>
+        <ModalShadow 
+        show={show}
+        setShow={setShow}
+      >
+         <Card className='cita__list__content' >
+
+          <Card.Header>
+            <h3>Dividir propina</h3>
+          </Card.Header>
+          <Card.Body className=''>
+            <span><strong>Miembros del equipo</strong></span>
+            <div className='row'>
+                <FormCustom
+                        styles={
+                            {
+
+                                
+                               
+                            }
+                        }
+                        title=''
+                        classCustom='col-md-8'
+                        classInput='nuevaTrasferencia__input'
+                        type='text'
+                        holder='Brandon Freeman'
+                    />
+                    <FormCustom
+                        styles={
+                            {
+                                
+                                
+                               
+                            }
+                        }
+                        title=''
+                        classCustom='col-md-4'
+                        classInput='nuevaTrasferencia__input'
+                        type='number'
+                        holder='900'
+                    />
+            </div>
+            <div className='row'>
+                <FormCustom
+                        styles={
+                            {
+
+                                
+                               
+                            }
+                        }
+                        title=''
+                        classCustom='col-md-8'
+                        classInput='nuevaTrasferencia__input'
+                        type='text'
+                        holder='Brandon Freeman'
+                    />
+                    <FormCustom
+                        styles={
+                            {
+                                
+                                
+                               
+                            }
+                        }
+                        title=''
+                        classCustom='col-md-4'
+                        classInput='nuevaTrasferencia__input'
+                        type='number'
+                        holder='900'
+                    />
+                    <span className='text-primary mt-1'>Anadir otra</span>
+            </div>
+          </Card.Body>
+          <Card.Footer className='d-flex justify-content-end bg-white'>
+              
+               <ButtonCustom 
+                title='Cancelar'
+                classe='mx-2'
+                styles={
+                  {
+                    width:'100px',
+                    background:'white',
+                    color:'#101928'
+
+                  }
+                }
+              />
+
+                <ButtonCustom 
+                  title='Guardar'
+                  styles={
+                    {
+                      width:'100px',
+                      color:'white',
+                      background:'#101928'
+
+                    }
+                  }
+                />
+            </Card.Footer>
+          </Card>
+
+      </ModalShadow>
     </div>
   )
 }

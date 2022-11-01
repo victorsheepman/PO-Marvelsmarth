@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
 import { Filter } from '../../../components/Filter/Filter'
-import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { FacturasRecientes } from '../../../container/FacturasRecientes/FacturasRecientes';
 import Card from 'react-bootstrap/Card';
-import {UserCalendar} from '../../../components/UserCalendar/UserCalendar';
-import { FacturaCliente } from '../../../container/FacturaCliente/FacturaCliente';
+import { FacturaCliente } from '../../../container/FacturaCliente/FacturaCliente';  
+import { ButtonCustom } from '../../../Atoms/ButtonCustom';
+import Form from 'react-bootstrap/Form';
+import { ModalShadow } from '../../../Atoms/ModalShadow';
+import { FormCustom } from '../../../Atoms/FormCustom';
+
 export const FacturaAbierta = () => {
     const [cliente, setCliente] = useState(true)
+    const [show, setShow] = useState(true)
   return (
     <div className='facturaAbierta'>
         <section className='facturaAbierta__form '>
@@ -54,6 +58,71 @@ export const FacturaAbierta = () => {
 
             }
         </section>
+        <ModalShadow 
+        show={show}
+        setShow={setShow}
+      >
+         <Card className='cita__list__content' >
+
+          <Card.Header>
+            <h3>Datos de facturacion</h3>
+          </Card.Header>
+          <Card.Body className=''>
+            <span><strong>Pago recibido por</strong></span>
+            
+                <FormCustom
+                        styles={
+                            {
+
+                                
+                               
+                            }
+                        }
+                        title=''
+                        classCustom='col-md-12'
+                        classInput='nuevaTrasferencia__input'
+                        type='text'
+                        holder='Brandon Freeman'
+                    />
+                       <Form>
+                            <Form.Group className="mb mt-3" controlId="exampleForm.ControlTextarea1">
+                                <Form.Label>Comentarios de la factura</Form.Label>
+                                <Form.Control as="textarea" rows={3} cols={50} />
+                            </Form.Group>
+                        </Form>
+            
+                   
+          </Card.Body>
+          <Card.Footer className='d-flex justify-content-end bg-white'>
+              
+               <ButtonCustom 
+                title='Cancelar'
+                classe='mx-2'
+                styles={
+                  {
+                    width:'100px',
+                    background:'white',
+                    color:'#101928'
+
+                  }
+                }
+              />
+
+                <ButtonCustom 
+                  title='Guardar'
+                  styles={
+                    {
+                      width:'100px',
+                      color:'white',
+                      background:'#101928'
+
+                    }
+                  }
+                />
+            </Card.Footer>
+          </Card>
+
+      </ModalShadow>
 
     </div>
   )

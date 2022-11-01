@@ -17,10 +17,15 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
         svg{
             position: absolute;
             top: 0;
             left: 0;
+        }
+        &--white{
+            @extend .datosFactura__aside;
+            background-color: white;
         }
 
     }
@@ -44,6 +49,10 @@
         padding-right: 3%;
         padding-top: 4%;
         background-color: $color-blue;
+        &--white{
+            @extend .datosFactura__content;
+            background-color: white;
+        }
     }
    
 
