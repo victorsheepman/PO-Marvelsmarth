@@ -122,6 +122,7 @@ import { DatosFacturacion } from './container/DatosFacturacion/DatosFacturacion'
 import { ImpresionCuadre } from './container/ImpresionCuadre/ImpresionCuadre';
 import { Roles } from './pages/Herreria/Roles/Roles';
 import { UsuarioRol } from './pages/Herreria/UsuariosRol/UsuarioRol';
+import { ListaRecibos } from './container/ListaRecibos/ListaRecibos';
 
 //Vas a hacer una "const" que será una cajita. Le pondrás el nombre de App
 
@@ -277,6 +278,9 @@ const App = () => {
                   <Route path='/UsurioRoles' element={<UsuarioRol />} />
                    <Route path='/Permisos' element={<Permisos />} />
                   <Route path='/PresupuestoEmpty' element={<PresupuestoEmpty />} />
+                  <Route path='/ListaRecibos' element={<ListaRecibos />} />
+
+                 
 
                   
                   

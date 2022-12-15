@@ -1,0 +1,25 @@
+.registro{
+    width: 90%;
+    height: 80px;
+    background-color: white;
+    border-radius: 40px 40px 40px;
+    display: flex;
+    &__name{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    &__client{
+        @extend .registro__name;
+        width: 40%;
+        justify-content: space-around;  
+    }
+    &__badge{
+        @extend .registro__name;
+        width: 30%;
+        //background-color: aqua;
+    }
+
+}
